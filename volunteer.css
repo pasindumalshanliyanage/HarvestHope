@@ -1,0 +1,143 @@
+/* global.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header and navigation */
+.header {
+  background-color: #2a7a2a; /* dark green */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:focus {
+  background-color: #1f5d1f; /* slightly darker green */
+  outline: none;
+}
+
+/* Main page container */
+.page-container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-height: 400px;
+}
+
+.page-container h1 {
+  color: #2a7a2a;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.page-container p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #1c1c1c;
+  color: #aaaaaa;
+  padding: 20px 40px;
+}
+
+.footer h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+/* Footer sections side by side */
+.footer-content {
+  display: flex;
+  justify-content: center; /* align left */
+  gap: 60px;
+  flex-wrap: wrap; /* responsive */
+}
+
+/* Footer section styling */
+.footer-section {
+  min-width: 200px; /* ensures some spacing */
+}
+
+/* Editor list styles */
+.editor-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+}
+
+.editor-list li {
+  padding: 6px 0;
+}
+
+.footer a {
+  color: #ffbb00;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Validation list styles */
+.validation-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+  color: #f9f871; /* light yellow */
+}
+
+.validation-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #444;
+  cursor: default;
+  transition: color 0.3s;
+}
+
+.validation-list li:hover {
+  color: #ffc60a;
+}

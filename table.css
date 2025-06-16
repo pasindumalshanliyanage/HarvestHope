@@ -1,0 +1,331 @@
+/* Add this at the top of your existing table.css file */
+
+body {
+    background-image: url('images/map.jpg');
+}
+
+/* Table Page Styles */
+
+/* Container for the entire table section */
+.table-container {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 0 20px;
+}
+
+/* Page title and intro */
+.table-container h1 {
+    color: #D8931D;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.table-intro {
+    color: #e0e0e0;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Logo banner section */
+.logo-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(42, 42, 42, 0.7);
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    margin-top: 40px;
+    border-bottom: 3px solid #D8931D;
+}
+
+.table-logo {
+    height: 70px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.logo-banner h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+/* Table container with shadow */
+.data-table-container {
+    overflow-x: auto;
+    margin: 0 0 30px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+}
+
+/* Main table styles */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(42, 42, 42, 0.9);
+    color: #e0e0e0;
+    font-size: 1rem;
+    border: none;
+}
+
+/* Table header styles */
+.data-table thead {
+    background-color: #1a1a1a;
+    color: #D8931D;
+}
+
+.data-table th {
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    border: none;
+}
+
+.region-header {
+    position: relative;
+}
+
+.region-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease;
+}
+
+.region-header:hover .region-icon {
+    transform: scale(1.2);
+}
+
+.region-header span {
+    display: block;
+}
+
+/* Table body styles with alternating row colors */
+.data-table tbody tr:nth-child(odd) {
+    background-color: rgba(50, 50, 50, 0.7);
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: rgba(60, 60, 60, 0.7);
+}
+
+.data-table tbody tr:hover {
+    background-color: rgba(216, 147, 29, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.data-table td {
+    padding: 12px 20px;
+    text-align: center;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+/* Program name column styling */
+.program-name {
+    font-weight: bold;
+    text-align: left;
+}
+
+.program-link {
+    color: #D8931D;
+    text-decoration: none;
+    position: relative;
+}
+
+.program-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #D8931D;
+    transition: width 0.3s ease;
+}
+
+.program-link:hover::after {
+    width: 100%;
+}
+
+.program-link:hover {
+    color: #e0e0e0;
+}
+
+/* Success ratings */
+.success-cell {
+    font-weight: bold;
+}
+
+.success-highest {
+    color: #7ac142;
+}
+
+.success-high {
+    color: #92c842;
+}
+
+.success-medium {
+    color: #c8c842;
+}
+
+/* Merged cell for emergency relief */
+.emergency-cell {
+    background-color: rgba(180, 50, 50, 0.2) !important;
+    padding: 15px !important;
+    font-weight: bold;
+}
+
+.emergency-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.emergency-icon {
+    font-size: 1.4rem;
+}
+
+/* Table footer */
+.table-footer {
+    background-color: rgba(35, 35, 35, 1) !important;
+    text-align: center !important;
+    padding: 15px 20px !important;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    border-top: 1px solid rgba(216, 147, 29, 0.3);
+}
+
+.table-footer p {
+    margin: 5px 0;
+}
+
+/* Table legend section */
+.table-legend {
+    background-color: rgba(42, 42, 42, 0.7);
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.table-legend h3 {
+    color: #D8931D;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.table-legend ul {
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.table-legend li {
+    margin-bottom: 8px;
+}
+
+.table-note {
+    font-style: italic;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+/* Tool tips */
+[title] {
+    position: relative;
+    cursor: help;
+}
+
+[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(26, 26, 26, 0.95);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .table-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    .table-intro {
+        font-size: 1rem;
+    }
+    
+    .logo-banner {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .table-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .logo-banner h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .data-table th, .data-table td {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .region-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .data-table {
+        font-size: 0.85rem;
+    }
+    
+    .data-table th, .data-table td {
+        padding: 8px 10px;
+    }
+    
+    .table-legend {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .table-container {
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+    
+    .table-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logo-banner h2 {
+        font-size: 1.2rem;
+    }
+    
+    .table-logo {
+        height: 50px;
+    }
+}

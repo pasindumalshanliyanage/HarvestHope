@@ -1,0 +1,103 @@
+/* content_st1.css */
+
+/* === Main Page Container Overrides === */
+.page-container {
+    max-width: 900px;
+    margin: 120px auto 80px;
+    background: var(--card);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* === Page Title === */
+.page-container > h1 {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* === Paragraph inside Main === */
+.page-container > p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* === Navigation Enhancements === */
+.nav-links ul {
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 1.15rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--hover-bg);
+    color: var(--primary);
+    border-bottom: none;
+}
+
+/* === Footer tweaks === */
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.editor-list li {
+    margin-bottom: 12px;
+}
+
+.editor-list a {
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s;
+}
+
+.editor-list a:hover,
+.editor-list a.active {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+    .page-container {
+        margin: 100px 15px 60px;
+        padding: 30px 20px;
+    }
+
+    .page-container > h1 {
+        font-size: 2.2rem;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        margin: 80px 10px 50px;
+        padding: 25px 15px;
+    }
+
+    .page-container > h1 {
+        font-size: 1.8rem;
+    }
+}

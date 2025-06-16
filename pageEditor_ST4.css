@@ -1,0 +1,140 @@
+/* global.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #00703c; /* Dark green */
+    padding: 10px 20px;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:focus {
+    color: #f2b01e; /* A warm yellow highlight */
+}
+
+.page-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.page-container h1 {
+    margin-bottom: 15px;
+    color: #00703c;
+    font-size: 2.5rem;
+}
+
+.page-container p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #003822; /* Darker green */
+    color: #ddd;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    min-width: 200px;
+    margin-right: 40px;
+}
+
+.footer-section h3 {
+    color: #f2b01e;
+    margin-bottom: 10px;
+}
+
+.editor-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.editor-list li {
+    margin-bottom: 8px;
+}
+
+.editor-list li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.editor-list li a:hover,
+.editor-list li a:focus {
+    color: #f2b01e;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #bbb;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin: 10px 0;
+    }
+}

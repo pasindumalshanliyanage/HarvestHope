@@ -1,0 +1,25 @@
+/* ===== Content ST2 Page Specific Styles ===== */
+
+.page-container {
+    background: rgba(42, 42, 42, 0.9);
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    max-width: 900px;
+    margin: 120px auto 60px;
+    text-align: center;
+}
+
+.page-container h1 {
+    font-size: 2.6rem;
+    color: var(--primary);
+    margin-bottom: 25px;
+}
+
+.page-container p {
+    font-size: 1.15rem;
+    color: #e0e0e0;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto;
+}

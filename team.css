@@ -1,0 +1,142 @@
+/* global.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+.header {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Navigation links */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:focus {
+    color: #1abc9c;
+    outline: none;
+}
+
+/* Main page container */
+.page-container {
+    flex-grow: 1;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+
+.page-container h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section {
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    color: #ecf0f1;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.editor-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.editor-list li {
+    margin-bottom: 6px;
+}
+
+.editor-list li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.editor-list li a:hover,
+.editor-list li a:focus {
+    color: #1abc9c;
+    outline: none;
+}
+
+/* Copyright text */
+.copyright {
+    font-size: 0.8rem;
+}
+
+/* Responsive nav on smaller screens */
+@media (max-width: 600px) {
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
