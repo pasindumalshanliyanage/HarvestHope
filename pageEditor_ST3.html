@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pageeditor St3</title>
   <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="pageEditor_ST3.css" />
 </head>
-<body>
+
   <div id="header" class="header">
         <nav>
             <div class="logo-container">
@@ -33,36 +34,229 @@
         </nav>
     </div>
 
-  <main class="page-container">
-    <h1>Pageeditor St3</h1>
-    <p>Content for Pageeditor St3 page goes here...</p>
-  </main>
+    <section class="stud">
+        <h2>Malshan Liyanage - Team Member </h2>
+    </section>
 
+    <div class="container">
+        <!-- Main content area -->
+        <main>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>Page Editors</h3>
-        <ul class="editor-list">
-          <li><a href="pageEditor_ST1.html">Student 1</a></li>
-          <li><a href="pageEditor_ST2.html">Student 2</a></li>
-          <li><a href="pageEditor_ST3.html">Student 3</a></li>
-          <li><a href="pageEditor_ST4.html">Student 4</a></li>
-        </ul>
+            <!-- Feedback Page -->
+            <section>
+                <h2 id="feedback">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            The Feedback Page is designed to collect user feedback through a structured form. The HTML structure uses <code>&lt;form&gt;</code> to encapsulate the feedback fields, with <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> to group related inputs logically. Key HTML tags include:
+                            <ul>
+                                <li><code>&lt;input&gt;</code>: Used for text, email, and telephone inputs, with type attributes specifying the input type.</li>
+                                <li><code>&lt;textarea&gt;</code>: For longer text inputs like comments and additional feedback.</li>
+                                <li><code>&lt;select&gt;</code>: For dropdown menus, such as feedback type and update preferences.</li>
+                                <li><code>&lt;label&gt;</code>: Associates text labels with form elements for better accessibility.</li>
+                                <li><code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>: Used for structuring and styling elements like the star rating system.</li>
+                            </ul>
+                            CSS is used to style the form for a cohesive and user-friendly design. Key CSS properties include:
+                            <ul>
+                                <li><code>grid</code> and <code>flexbox</code>: For layout management, ensuring the form is responsive and well-organized.</li>
+                                <li><code>box-shadow</code> and <code>border-radius</code>: To create a modern, visually appealing form with rounded corners and subtle shadows.</li>
+                                <li><code>transition</code>: For smooth hover effects on buttons and interactive elements.</li>
+                                <li><code>display: none</code> and <code>display: block</code>: Used to show/hide the update preferences section based on user selection.</li>
+                            </ul>
+                            The JavaScript (<code>js.js</code>) handles form validation and interactivity, such as:
+                            <ul>
+                                <li>Email validation: Ensures the email input follows a valid format.</li>
+                                <li>Star rating system: Allows users to click stars to rate their experience.</li>
+                                <li>Dynamic form behavior: Shows/hides the update preferences section based on user input.</li>
+                            </ul>
+                        </p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>
+                            Accessibility was addressed by:
+                            <ul>
+                                <li>Labels and Inputs: Each form element is paired with a <code>&lt;label&gt;</code> using the <code>for</code> attribute, ensuring screen readers can associate labels with inputs.</li>
+                                <li>ARIA Roles: Although not explicitly added, the form structure inherently supports accessibility by using semantic HTML.</li>
+                                <li>Focus States: Interactive elements like buttons and inputs have visible focus states, aiding keyboard navigation.</li>
+                                <li>Error Messages: Clear error messages are displayed for invalid inputs, helping users correct mistakes.</li>
+                            </ul>
+                        </p>
+                    
+                    <h3>Link to the Validation Page</h3>
+                        <p><a href="validation_ST3.html#feedbackVal">Validation for Feedback Page</a></p>
+
+                    <h3>Link to the Page</h3>
+                        <p><a href="feedback.html">Feedback Page</a></p>
+            </section>
+<!-- Team Page -->
+            <section>
+                <h2 id="team">Team Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            The Team Page showcases team members in a grid layout. The HTML structure uses <code>&lt;div&gt;</code> elements to create a grid of team member cards. Key HTML tags include:
+                            <ul>
+                                <li><code>&lt;img&gt;</code>: Displays team member photos.</li>
+                                <li><code>&lt;h3&gt;</code> and <code>&lt;p&gt;</code>: For member names, roles, and task details.</li>
+                                <li><code>&lt;div&gt;</code>: Used to structure the grid and individual cards.</li>
+                            </ul>
+                            CSS is used to create a visually appealing and interactive layout. Key CSS properties include:
+                            <ul>
+                                <li><code>grid-template-columns</code>: Defines a 4-column grid for team members, ensuring a responsive layout.</li>
+                                <li><code>transform: scale(1.05)</code>: Adds a hover effect to enlarge team member cards.</li>
+                                <li><code>position: absolute</code> and <code>transform: translateX(-50%)</code>: Positions member info at the bottom of each card.</li>
+                                <li><code>box-shadow</code> and <code>border-radius</code>: Enhances the visual appeal of the cards.</li>
+                                <li><code>transition</code>: Smoothly animates hover effects.</li>
+                            </ul>
+                        </p>
+
+                    <h3>Accessibility</h3>
+                        <p>
+                            Accessibility considerations included:
+                            <ul>
+                                <li>Alt Text: Each <code>&lt;img&gt;</code> includes <code>alt</code> text, describing the team member for screen readers.</li>
+                                <li>Focus States: Team member cards are focusable (<code>tabindex="0"</code>), allowing keyboard users to interact with them.</li>
+                                <li>Semantic HTML: Proper use of headings (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) ensures a clear content hierarchy for screen readers.</li>
+                                <li>Contrast: Text and background colors are chosen to ensure sufficient contrast for readability.</li>
+                            </ul>
+                        </p>
+
+                    <h3>Link to the Validation Page</h3>
+                        <p><a href="validation_ST3.html">Validation for Team Page</a></p>
+
+                    <h3>Link to the Page</h3>
+                        <p><a href="team.html">Team Page</a></p>
+            </section>
+
+            <!-- Content Page -->
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            The Content Page (<code>content_ST3.html</code>) presents information about the impact of hunger on communities. The HTML structure uses <code>&lt;section&gt;</code> to divide content into logical sections, with <code>&lt;h2&gt;</code> for section headings and <code>&lt;p&gt;</code> for paragraphs. Key HTML tags include:
+                            <ul>
+                                <li><code>&lt;img&gt;</code>: Displays relevant images with <code>alt</code> text for accessibility.</li>
+                                <li><code>&lt;a&gt;</code>: Used for internal navigation links within the page.</li>
+                                <li><code>&lt;div&gt;</code>: Wraps content sections for styling and layout.</li>
+                            </ul>
+                            CSS is used to style the page for readability and visual appeal. Key CSS properties include:
+                            <ul>
+                                <li><code>max-width</code> and <code>margin: auto</code>: Centers the content container on the page.</li>
+                                <li><code>box-shadow</code> and <code>border-radius</code>: Adds depth and rounded corners to sections and images.</li>
+                                <li><code>grid-template-columns</code>: Used in the internal navigation to create a 2-column layout for links.</li>
+                                <li><code>position: fixed</code>: Positions the "Go to Top" button at the bottom-right corner of the page.</li>
+                            </ul>
+                        </p>
+
+                    <h3>Accessibility</h3>
+                        <p>
+                            Accessibility was addressed by:
+                            <ul>
+                                <li>Internal Navigation: The internal navigation links (<code>&lt;a&gt;</code>) allow users to jump to specific sections, improving navigation for keyboard and screen reader users.</li>
+                                <li>Alt Text: All images include descriptive <code>alt</code> text.</li>
+                                <li>Contrast: Text and background colors are chosen to ensure readability.</li>
+                                <li>Focus States: Interactive elements like links and buttons have visible focus states.</li>
+                            </ul>
+                        </p>
+
+                    <h3>Link to the Validation Page</h3>
+                        <p><a href="validation_ST3.html#contentVal">Validation for Content Page</a></p>
+
+                    <h3>Link to the Page</h3>
+                        <p><a href="content_ST3.html">Content Page</a></p>
+            </section>
+
+            <!-- Challenges and Lessons Learned -->
+            <section>
+                <h2 id="challenge">Challenges and Lessons Learned</h2>
+                    <p>
+                        During the implementation of the Feedback, Team, and Content pages, I encountered several challenges:
+                        <ul>
+                            <li><strong>Form Validation:</strong> Implementing real-time email validation required careful handling of input events and error messages.</li>
+                            <li><strong>Responsive Design:</strong> Ensuring the team page grid and feedback form were responsive across devices required extensive testing.</li>
+                            <li><strong>Accessibility:</strong> Balancing visual design with accessibility requirements, such as contrast and focus states, was challenging.</li>
+                        </ul>
+                        These challenges taught me the importance of planning and testing early in the development process.
+                    </p>
+            </section>
+
+            <!-- Compliance -->
+            <section>
+                <h2 id="compliance">Compliance</h2>
+                    <p>
+                        The pages I developed comply with Janet regulations by:
+                        <ul>
+                            <li>Accessibility: Ensuring all pages are navigable via keyboard and screen reader-friendly.</li>
+                            <li>Validation: Using valid HTML and CSS, as confirmed by W3C validation tools.</li>
+                            <li>Content Clarity: Providing clear and concise content with proper headings and labels.</li>
+                            <li>Security: Ensuring forms are secure and user data is handled responsibly (though no backend is implemented, this would be a consideration in a live environment).</li>
+                        </ul>
+                    </p>
+            </section>
+
+            <!-- References -->
+            <section>
+                <h2 id="ref">References</h2>
+                <p>
+                    Resources used:
+                    <ul class="ref">
+                        <li>United Nations (2024). Goal 2 | End hunger, achieve food security and improved nutrition and promote sustainable agriculture. [Last accessed: 9 Mar 2025] sdgs.un.org. Available at: <a href="https://sdgs.un.org/goals/goal2">https://sdgs.un.org/goals/goal2</a>.</li>
+                        <li>W3Schools (2019). HTML CSS. [Last accessed: 4 Mar 2025] W3schools.com. Available at: <a href="https://www.w3schools.com/html/html_css.asp">https://www.w3schools.com/html/html_css.asp</a>.</li>
+                        <li>IIT Web Development Course Materials. (2025). Lecture Notes: Responsive Web Design.</li>
+                        <li>W3Schools (2019). HTML Forms. [Last accessed: 4 Mar 2025] W3schools.com. Available at: <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a>.</li>
+                        <li>www.w3schools.com. (n.d.). How To Display an Element on Hover. [Last accessed: 5 Mar 2025] Available at: <a href="https://www.w3schools.com/howto/howto_css_display_element_hover.asp">https://www.w3schools.com/howto/howto_css_display_element_hover.asp</a>.</li>
+                        <li>www.w3schools.com. (n.d.). JavaScript Classes. [Last accessed: 9 Mar 2025] Available at: <a href="https://www.w3schools.com/js/js_classes.asp">https://www.w3schools.com/js/js_classes.asp</a>.</li>
+                        <li>The Power of Nutrition. (2024). Malnutrition. [online] Available at: <a href="https://www.powerofnutrition.org/malnutrition">https://www.powerofnutrition.org/malnutrition</a>.</li>
+                        <li>World Food Program USA (2023). Is There a Global Food Shortage? What's Causing Hunger, Famine and Rising Food Costs Around the World. [Last accessed: 8 Mar 2025] World Food Program USA. Available at: <a href="https://www.wfpusa.org/articles/is-there-global-food-shortage-whats-causing-hunger-famine-rising-food-costs-around-world/">https://www.wfpusa.org/articles/is-there-global-food-shortage-whats-causing-hunger-famine-rising-food-costs-around-world/</a>.</li>
+                        <li>World Food Program USA (2023). The Effects of Child Nutrition on Academic Performance: How School Meals Can Break the Cycle of Poverty. [Last accessed: 9 Mar 2025] World Food Program USA. Available at: <a href="https://www.wfpusa.org/articles/effects-child-nutrition-academic-performance-how-school-meals-can-break-cycle-poverty/">https://www.wfpusa.org/articles/effects-child-nutrition-academic-performance-how-school-meals-can-break-cycle-poverty/</a>.</li>
+                        <li>www.wvi.org. (n.d.). Five ways starvation impacts children that you may not have heard of. [Last accessed: 9 Mar 2025] Available at: <a href="https://www.wvi.org/stories/emergencies/five-ways-starvation-impacts-children-you-may-not-have-heard">https://www.wvi.org/stories/emergencies/five-ways-starvation-impacts-children-you-may-not-have-heard</a>.</li>
+                        <li>W3Schools (2025) <i>HTML and CSS Tutorials.</i> Available at: <a href="https://www.w3schools.com/html/html_css.asp">https://www.w3schools.com/html/html_css.asp</a> (Last accessed: 9 Mar 2025).</li>
+                        <li>MDN Web Docs (2025) <i>HTML and CSS Documentation.</i> Available at: <a href="https://developer.mozilla.org">https://developer.mozilla.org</a> (Last accessed: 9 Mar 2025).</li>
+                        <li>Duckett, J., 2011. <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons, Inc., Indianapolis.</li>
+                    </ul>
+                </p>
+            </section>
+
+                    <p class="top"><a href="#top">Go top</a></p>
+                </main>
+
+                <!-- Sidebar area -->
+                <aside>
+                    <h3>Core Pages Developed:</h3>
+                    <ul class="top-level-ul">
+                        <li><a href="#feedback">Feedback Page</a></li>
+                        <li><a href="#team">Team Page</a></li>
+                        <li><a href="#content">Content Page</a></li>
+                        <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                        <li><a href="#compliance">Compliance</a></li>
+                        <li><a href="#ref">References</a></li>
+                    </ul>
+                </aside>
+            </div>
+  
+  
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Page Editors</h3>
+          <ul class="editor-list">
+            <li><a href="pageEditor_ST1.html">Student 1</a></li>
+            <li><a href="pageEditor_ST2.html">Student 2</a></li>
+            <li><a href="pageEditor_ST3.html">Student 3</a></li>
+            <li><a href="pageEditor_ST4.html">Student 4</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Validations</h3>
+          <ul class="validation-list">
+            <li><a href="validation_ST1.html">Validation - Student 1</a></li>
+            <li><a href="validation_ST2.html">Validation - Student 2</a></li>
+            <li><a href="validation_ST3.html">Validation - Student 3</a></li>
+            <li><a href="validation_ST4.html">Validation - Student 4</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-section">
-        <h3>Validations</h3>
-        <ul class="validation-list">
-          <li><a href="validation_ST1.html">Validation - Student 1</a></li>
-          <li><a href="validation_ST2.html">Validation - Student 2</a></li>
-          <li><a href="validation_ST3.html">Validation - Student 3</a></li>
-          <li><a href="validation_ST4.html">Validation - Student 4</a></li>
-        </ul>
+      <div class="copyright">
+        &copy; 2025 HarvestHope Team. All rights reserved.
       </div>
-    </div>
-    <div class="copyright">
-      &copy; 2025 HarvestHope Team. All rights reserved.
-    </div>
-  </footer>
-</body>
-</html>
+    </footer>
+  </body>
+  </html>
