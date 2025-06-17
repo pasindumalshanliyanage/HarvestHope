@@ -320,3 +320,75 @@ ul.styled-list li::before {
 
 /* === Legacy Cleanup === */
 .logo-name, .logo-text, .user-icon { display: none; }
+
+
+/* Footer styles */
+.footer {
+  background-color: #1c1c1c;
+  color: #aaaaaa;
+  padding: 20px 40px;
+}
+
+.footer h3 {
+  color: #ffc60a;
+  margin-bottom: 12px;
+}
+
+/* Footer sections side by side */
+.footer-content {
+  display: flex;
+  justify-content: center; /* align left */
+  gap: 60px;
+  flex-wrap: wrap; /* responsive */
+}
+
+/* Footer section styling */
+.footer-section {
+  min-width: 200px; /* ensures some spacing */
+}
+
+/* Editor list styles */
+.editor-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+}
+
+.editor-list li {
+  padding: 6px 0;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Validation list styles */
+.validation-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+  color: #ffffff; 
+}
+
+.validation-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #444;
+  cursor: default;
+  transition: color 0.3s;
+}
+
+.validation-list li:hover {
+  color: #ffc60a;
+}
+
+/* ===== Specific styling for Welcome title only ===== */
+.welcome-heading {
+  font-size: 5rem;               /* Larger font size */
+  color: #ffffff;                /* Bright white for emphasis */
+  text-shadow: 2px 2px 5px #af8704; /* Subtle shadow for better readability */
+}

@@ -69,60 +69,6 @@ body {
     color: #555;
 }
 
-/* Footer styling */
-.footer {
-    background-color: #003822; /* Darker green */
-    color: #ddd;
-    padding: 20px 0;
-    font-size: 0.9rem;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 20px;
-    flex-wrap: wrap;
-}
-
-.footer-section {
-    min-width: 200px;
-    margin-right: 40px;
-}
-
-.footer-section h3 {
-    color: #f2b01e;
-    margin-bottom: 10px;
-}
-
-.editor-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.editor-list li {
-    margin-bottom: 8px;
-}
-
-.editor-list li a {
-    color: #ddd;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.editor-list li a:hover,
-.editor-list li a:focus {
-    color: #f2b01e;
-}
-
-.footer .copyright {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 0.8rem;
-    color: #bbb;
-    width: 100%;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
