@@ -87,20 +87,17 @@ body {
 }
 
 .footer a {
-  color: #ffbb00;
+  color: #ffffff;
   text-decoration: none;
 }
 
-.footer a:hover {
-  text-decoration: underline;
-}
 
 /* Validation list styles */
 .validation-list {
   list-style: none;
   padding-left: 0;
   font-size: 1.2rem;
-  color: #f9f871; /* light yellow */
+  color: #ffffff; 
 }
 
 .validation-list li {
