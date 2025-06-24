@@ -1,101 +1,146 @@
-/* global.css */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-  min-height: 100vh;
+  background-color: #545647;
   display: flex;
   flex-direction: column;
-}
-
-/* HEADER */
-.header {
-  background-color: #2c3e50;
-  padding: 15px 20px;
-}
-
-nav {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #ffffff;
+
+  align-items: stretch;
+}
+
+main {
+  margin-top: 60px;
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.logo img {
-  height: 50px;
-}
-
-.nav-links ul {
-  list-style: none;
+.content {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
-.nav-links ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.nav-links ul li a:hover,
-.nav-links ul li a:focus {
-  background-color: #34495e;
-  outline: none;
-}
-
-/* MAIN PAGE CONTENT */
-.page-container {
-  flex-grow: 1;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
-}
-
-.page-container h1 {
+h1 {
+  color: #a6a9ac;
+  font-size: 46px;
+  text-transform: uppercase;
   margin-bottom: 20px;
-  font-size: 2.2rem;
-  color: #2c3e50;
+  letter-spacing: 1.5px;
 }
 
-.page-container p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: #555;
+/* Container for SVG */
+.svg-container {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  background: rgba(255, 222, 89, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
+/* Sitemap SVG */
+svg {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+}
+
+/* Node Styles */
+.node, .child-node {
+  fill: #d7c898;
+  rx: 10;
+  ry: 10;
+  transition: fill 0.3s ease;
+}
+
+.node:hover:not(.no-hover),
+.child-node:hover {
+  fill: #ad8b06;
+  cursor: pointer;
+}
+
+/* Hover effects */
+.node-group:hover text {
+  fill: #ffffff;
+  color: black;
+}
+
+.node-group .node.no-hover:hover,
+.node-group .node.no-hover + text:hover {
+  fill: #333333;
+  cursor: default;
+}
+
+.node-group .node.no-hover + text {
+  fill: #000000;
+}
+
+/* Text inside nodes */
+text {
+  fill: #000000;
+  font-size: 14px;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Connector lines */
+line {
+  stroke: #ffde59;
+  stroke-width: 2;
+}
+
+/* Bottom image */
+.bottom-left-image-inside {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Responsive text and headings */
+@media (max-width: 1024px) {
+  svg {
+    max-width: 100%;
   }
 
-  .nav-links ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
+  .svg-container {
+    overflow-x: auto;
   }
+}
 
-  .page-container {
-    margin: 20px 10px;
+@media (max-width: 768px) {
+  text {
+    font-size: 12px;
   }
+  h1 {
+    font-size: 28px;
+  }
+}
 
-  .footer-content {
-    flex-direction: column;
+@media (max-width: 480px) {
+  text {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 22px;
   }
 }
