@@ -16,11 +16,7 @@ body::before, body::after {
     z-index: -2;
 }
 body::before {
-<<<<<<< HEAD
-    background: url('images/gg\ backup.gif') center/cover no-repeat fixed;
-=======
-    background: url('images/splbg.jpg') center/cover no-repeat fixed;
->>>>>>> 1d538f9909e89ccb58ce30a37b1fad8da84b246e
+    background: url('images/backup.gif') center/cover no-repeat fixed;
     opacity: 1.0;
 }
 body::after {
