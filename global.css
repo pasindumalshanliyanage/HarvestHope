@@ -16,7 +16,7 @@ body::before, body::after {
     z-index: -2;
 }
 body::before {
-    background: url('images/backup.gif') center/cover no-repeat fixed;
+    background: url('images/bg1.gif') center/cover no-repeat fixed;
     opacity: 1.0;
 }
 body::after {
