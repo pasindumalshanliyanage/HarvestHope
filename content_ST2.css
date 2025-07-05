@@ -1,25 +1,440 @@
-/* ===== Content ST2 Page Specific Styles ===== */
+/* Editor Page Styles */
 
-.page-container {
-    background: rgba(42, 42, 42, 0.9);
-    padding: 50px 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-    max-width: 900px;
-    margin: 120px auto 60px;
+/* General Editor Page Styling */
+.editor-body {
+    background-color: #121212;
+}
+
+/* Main Container Layout */
+.editor-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 120px auto 50px;
+    padding: 0 20px 0 0; /* Remove left padding */
+    gap: 30px;
+}
+
+/* Sidebar Navigation */
+.editor-sidebar {
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+    width: 220px;
+    flex-shrink: 0;
+    background-color: rgba(42, 42, 42, 0.9);
+    padding: 25px 25px 25px 20px; /* Adjusted padding */
+    border-radius: 0 8px 8px 0; /* No left border radius */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    margin-left: 0; /* Remove margin */
+    left: 0; /* Position flush against left edge */
+    border-left: none; /* No left border */
+}
+
+.editor-sidebar h3 {
+    display: none;
+}
+
+.editor-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.editor-sidebar li {
+    margin-bottom: 10px;
+}
+
+.editor-sidebar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.editor-sidebar a:hover {
+    color: #ffffff;
+    background-color: rgba(216, 147, 29, 0.2);
+    transform: translateX(5px);
+}
+
+/* Main Content Area */
+.editor-content {
+    flex: 1;
+    background-color: rgba(42, 42, 42, 0.8);
+    padding: 30px 40px;
+    border-radius: 8px;
+    line-height: 1.6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+.editor-content h1 {
+    color: #D8931D;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #D8931D;
+    padding-bottom: 15px;
     text-align: center;
 }
 
-.page-container h1 {
-    font-size: 2.6rem;
-    color: var(--primary);
-    margin-bottom: 25px;
+.editor-content h2 {
+    color: #D8931D;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 5px solid #D8931D;
+    padding-left: 15px;
 }
 
-.page-container p {
-    font-size: 1.15rem;
+.editor-content h3 {
     color: #e0e0e0;
-    line-height: 1.7;
-    max-width: 750px;
-    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.editor-content h4 {
+    color: #D8931D;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Text Content */
+.editor-content p {
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+.editor-content ul, .editor-content ol {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.editor-content li {
+    margin-bottom: 8px;
+}
+
+/* Sections */
+.editor-content section {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.editor-content section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* Special Content Containers */
+.implementation-details,
+.challenges-section,
+.accessibility-section,
+.compliance-section,
+.references-section {
+    background-color: rgba(32, 32, 32, 0.6);
+    padding: 20px 25px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h3 {
+    color: #D8931D;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.profile-info p {
+    margin-bottom: 15px;
+}
+
+.profile-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-info li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.profile-info li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #D8931D;
+}
+
+/* Links */
+.external-link, .validation-link {
+    display: inline-block;
+    background-color: rgba(216, 147, 29, 0.2);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.external-link {
+    color: #D8931D;
+}
+
+.validation-link {
+    background-color: rgba(100, 100, 100, 0.3);
+    color: #cccccc;
+    margin-left: 5px;
+}
+
+.external-link:hover {
+    background-color: rgba(216, 147, 29, 0.4);
+    transform: translateY(-2px);
+}
+
+.validation-link:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    transform: translateY(-2px);
+}
+
+.icon {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-left: 3px;
+}
+
+.in-progress {
+    color: #D8931D;
+    font-style: italic;
+    margin-left: 5px;
+    font-size: 0.85rem;
+}
+
+/* Code Styling */
+code {
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    color: #D8931D;
+}
+
+/* View Page Button */
+.view-page-container {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.view-page-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(216, 147, 29, 0.9);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 350px;
+    font-size: 1.1rem;
+}
+
+.view-page-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.button-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.button-arrow {
+    margin-left: 8px;
+    font-size: 0.9rem;
+}
+
+/* Button container for page and validation buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+/* View Validation Button */
+.view-validation-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(80, 80, 80, 0.8);
+    color: #e0e0e0;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    max-width: 300px;
+    font-size: 0.95rem;
+}
+
+.view-validation-button:hover {
+    background-color: rgba(100, 100, 100, 0.9);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Images */
+.image-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.editor-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(216, 147, 29, 0.3);
+}
+
+.image-caption {
+    color: #aaaaaa;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* References */
+.references-section ol {
+    padding-left: 20px;
+}
+
+.references-section li {
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.references-section a {
+    color: #D8931D;
+    word-break: break-all;
+}
+
+.references-section a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1000px) {
+    .editor-container {
+        flex-direction: column;
+    }
+    
+    .editor-sidebar {
+        position: static;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .editor-sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .editor-sidebar li {
+        margin-bottom: 0;
+    }
+    
+    .editor-sidebar a {
+        white-space: nowrap;
+    }
+    
+    .editor-sidebar a:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .editor-content {
+        padding: 20px;
+    }
+    
+    .editor-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .editor-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+    }
+    
+    .profile-info {
+        width: 100%;
+    }
+
+    .view-validation-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .editor-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .editor-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .implementation-details,
+    .challenges-section,
+    .accessibility-section,
+    .compliance-section,
+    .references-section {
+        padding: 15px;
+    }
+}
+
+/* Active states for current page links */
+.editor-list a.active {
+    color: #D8931D;
+    font-weight: bold;
 }
