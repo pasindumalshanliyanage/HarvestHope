@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Page Editor - Student 01</title>
   <link rel="stylesheet" href="global.css" />
-  <link rel="stylesheet" href="content_st1.css" />
+  <link rel="stylesheet" href="pageEditor_ST1.css" />
 </head>
 <body>
   <!-- Header -->
@@ -37,141 +37,91 @@
 
   <!-- Page Content -->
   <main class="page-container">
-    <h1>Page Editor - Student 01</h1>
-    <p><strong>Student Name:</strong> Sudam Amarajeewa</p>
-    <p><strong>Role:</strong> Team Leader (Student 01)</p>
+    <div class="editor-header">
+      <img src="images/sudam.jpg" alt="Student Image" class="editor-img" />
+      <div>
+        <h1>Page Editor - Student 01</h1>
+        <p><strong>Student Name:</strong> Sudam Amarajeewa</p>
+        <p><strong>Role:</strong> Team Leader (Student 01)</p>
+      </div>
+    </div>
 
     <section class="section">
-      <h2 class="section-title">Completed Tasks</h2>
+      <h2 class="section-title">Completed Tasks / Pages</h2>
+      <div class="task-grid">
+
+        <div class="task-card">
+          <h3>Splash Screen</h3>
+          <p>This entry screen introduces users to the HarvestHope website and our mission. It includes a warm welcome, the project name, and team introduction using elegant visuals.</p>
+          <a href="splash.html" target="_blank" class="view-btn">View Page ↗</a>
+        </div>
+
+        <div class="task-card">
+          <h3>Volunteer Page</h3>
+          <p>This page showcases a variety of volunteer opportunities, includes a real-time review system, and lets users submit personalized feedback using a form.</p>
+          <a href="volunteer.html" target="_blank" class="view-btn">View Page ↗</a>
+        </div>
+
+        <div class="task-card">
+          <h3>Content Page (content_ST1)</h3>
+          <p>Details how backyard farming supports local food sustainability. Designed with structured content, styled cards, and relevant imagery to engage users.</p>
+          <a href="content_ST1.html" target="_blank" class="view-btn">View Page ↗</a>
+        </div>
+
+        <div class="task-card">
+          <h3>Page Editor</h3>
+          <p>This current page highlights the contributions made by Student 01. It also provides structured information about completed pages and technical implementation.</p>
+          <a href="pageEditor_ST1.html" class="view-btn">View Page ↗</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Technical Description</h2>
+      <p>The goal was to design a consistent user experience with modern HTML5 structure and responsive styling using CSS Flexbox. All pages created by Student 01 use:</p>
       <ul class="styled-list">
-        <li>
-          <strong>Splash Screen</strong><br />
-          Created splash-screen which displays as an entrance to the website. Displays the website name and teammates giving an introduction to the website.<br />
-          <a href="splash.html">Go to Splash Screen</a>
-        </li>
-        <li>
-          <strong>Volunteer Page</strong><br />
-          Created the Volunteer Page featuring various volunteer programs, a dedicated User Ratings and Reviews section, and a user-friendly Feedback Form for submitting reviews.<br />
-          <a href="volunteer.html">Go to Volunteer Page</a>
-        </li>
-        <li>
-          <strong>Extra Content Page (Student 01)</strong><br />
-          Created the extra content page that includes more extra information about a selected attraction using HTML and CSS.<br />
-          <a href="content_ST1.html">Go to Content Page</a>
-        </li>
-        <li>
-          <strong>Editor's Page</strong><br />
-          Created the editor's page, which displays the editor name, role, tasks completed, and a link to each task completed using HTML and CSS.<br />
-          <a href="pageEditor_ST1.html">Go to Editor's Page</a>
-        </li>
+        <li><strong>HTML5 Semantic Tags</strong>: Proper usage of header, section, nav, article, and footer.</li>
+        <li><strong>Card-Based Layouts</strong>: Information presented using visually distinct boxes with shadows and hover effects.</li>
+        <li><strong>Responsive Design</strong>: Media queries and flexible units used to adapt the layout to various devices.</li>
+        <li><strong>Interactive Features</strong>: Review forms, hover transitions, and button styling for enhanced engagement.</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Content Overview</h2>
-      <p><strong>Student Name:</strong> Chanal Ramiru Ranmeth Udugampola</p>
-      <p><strong>Student ID:</strong> 20231545 / w2120332</p>
-      <p><strong>Role:</strong> Frontend Developer &amp; UI Designer</p>
-
-      <h3>Completed Tasks/Pages</h3>
+      <h2 class="section-title">Challenges & Lessons Learned</h2>
       <ul class="styled-list">
-        <li>Home Page - <a href="home.html" target="_blank" rel="noopener">View Page ↗</a></li>
-        <li>Content Page (Zero Hunger Roadmap) - <a href="content_ST2.html" target="_blank" rel="noopener">View Page ↗</a></li>
-        <li>Table Page - <a href="table.html" target="_blank" rel="noopener">View Page ↗</a></li>
-        <li>Website Template &amp; Navigation - Used throughout the site</li>
-        <li>Homepage Implementation</li>
-      </ul>
-
-      <h3>Technical Description</h3>
-      <p>
-        The homepage serves as the central hub of the Hungerless website, designed to both engage visitors and provide clear navigation paths to all sections of the site.
-        My implementation focused on creating an impactful first impression while ensuring intuitive usability.
-      </p>
-
-      <h4>Key HTML Elements</h4>
-      <ul class="styled-list">
-        <li>Semantic Structure - Used semantic HTML5 elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to improve accessibility and SEO.</li>
-        <li>Navigation Menu - Implemented a responsive navigation bar with flexbox for optimal display across devices.</li>
-        <li>Hero Section - Created a prominent hero section with a compelling background image and overlay text to immediately convey the site's purpose.</li>
-        <li>Content Cards - Used card-based layout for mission/vision statements and content links to organize information in visually distinct units.</li>
-      </ul>
-
-      <h4>Key CSS Techniques</h4>
-      <ul class="styled-list">
-        <li>Flexbox Layout - Used flexbox for responsive layouts that adjust gracefully to different screen sizes.</li>
-        <li>CSS Variables - Implemented CSS variables for consistent color theming across the site.</li>
-        <li>Background Effects - Applied semi-transparent overlays on background images to ensure text readability while preserving visual appeal.</li>
-        <li>Hover Effects &amp; Transitions - Added subtle animations and transitions to interactive elements to improve user experience.</li>
-        <li>Media Queries - Implemented breakpoints to ensure the site functions effectively on mobile devices, tablets, and desktops.</li>
-      </ul>
-
-      <h3>Design Decisions</h3>
-      <p>
-        The color scheme was carefully selected to evoke feelings of warmth and hope, with orange (#D8931D) as the primary accent color. This color is consistently used for interactive elements and important headings to create visual consistency and guide user attention.
-        The dark background with subtle texture provides contrast while giving the site a modern, professional feel.
-      </p>
-      <p>
-        The logo placement and sizing were optimized for immediate brand recognition, with a subtle hover effect to indicate interactivity. Navigation links feature underline effects on hover to reinforce their clickable nature without being visually disruptive.
-      </p>
-
-      <h3>Content Page Implementation (Zero Hunger Roadmap)</h3>
-      <p>
-        The Zero Hunger Roadmap content page presents Hungerless's strategic goals through an organized, visually engaging layout. The page was designed to facilitate both quick scanning and in-depth reading of our organization's approach to addressing food insecurity.
-      </p>
-      <p>
-        Key HTML Elements include semantic headings, card-based content with consistent structure, internal navigation, anchor links for quick jumps, and a back-to-top button.
-      </p>
-      <p>
-        Key CSS techniques include CSS Grid and Flexbox for responsive 3×3 grids, fixed position elements for side navigation, card styling with shadows and hover effects, optimized SVG images, and media queries for responsiveness.
-      </p>
-
-      <h3>Table Page Implementation</h3>
-      <p>
-        The Table Page presents detailed data about global food security initiatives in a clear, organized, and visually engaging manner.
-      </p>
-      <p>
-        Key HTML elements include semantic headings and structured tables. CSS techniques include Flexbox for layout, responsive tables, card styling, optimized images, and media queries.
-      </p>
-
-      <h3>Challenges &amp; Lessons Learned</h3>
-      <ul class="styled-list">
-        <li><strong>Navigation Consistency:</strong> Ensuring consistent navigation elements across pages was challenging but solved by modular CSS components.</li>
-        <li><strong>Responsive Goal Cards:</strong> Maintaining visual appeal while adapting grid layout for different screen sizes required careful planning and testing.</li>
-        <li><strong>Image Optimization:</strong> Balancing image quality and load times was managed by using SVG icons and optimized JPGs.</li>
-      </ul>
-
-      <h3>Accessibility Considerations</h3>
-      <ul class="styled-list">
-        <li>Semantic HTML for screen reader clarity.</li>
-        <li>High color contrast exceeding WCAG AA standards.</li>
-        <li>Keyboard navigation with visible focus states.</li>
-        <li>Descriptive alt text on images for accessibility.</li>
-        <li>Responsive design supporting text resizing up to 200%.</li>
-      </ul>
-
-      <h3>Compliance</h3>
-      <ul class="styled-list">
-        <li>Valid HTML5 and CSS3 code.</li>
-        <li>Responsive design compatible across devices and browsers.</li>
-        <li>Proper semantic structure for accessibility.</li>
-        <li>Clear, factual content presentation.</li>
-        <li>Attributions for all external resources.</li>
-      </ul>
-
-      <h3>Security Considerations</h3>
-      <p>
-        Careful form handling to prevent vulnerabilities and no collection of sensitive data without disclosure. All development practices align with institutional web publishing standards.
-      </p>
-
-      <h3>References</h3>
-      <ul class="styled-list">
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank" rel="noopener">MDN Web Docs - CSS Grid Layout (2023)</a></li>
-        <li><a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener">W3C - Web Content Accessibility Guidelines (WCAG) 2.2 (2022)</a></li>
-        <li><a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank" rel="noopener">United Nations - Sustainable Development Goal 2: Zero Hunger</a></li>
-        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener">Nielsen Norman Group - 10 Usability Heuristics (2020)</a></li>
-        <li>IIT Web Development Course Materials (2025) - Lecture Notes: Responsive Web Design</li>
+        <li><strong>Consistency:</strong> Maintaining design uniformity across all pages using the global CSS file was critical.</li>
+        <li><strong>User Engagement:</strong> Designing interactive volunteer and feedback sections required testing for ease of use.</li>
+        <li><strong>Responsiveness:</strong> Ensuring visual balance on both large and small screens was refined using Flexbox.</li>
+        <li><strong>Content Relevance:</strong> Focused on meaningful topics such as Backyard Farming to strengthen the Zero Hunger theme.</li>
       </ul>
     </section>
+
+    <section class="section">
+      <h2 class="section-title">References</h2>
+      <p><strong>Resources used:</strong></p>
+      <ul class="styled-list">
+        <li>United Nations (2024). Goal 2 | End hunger, achieve food security and improved nutrition and promote sustainable agriculture. [Last accessed: 5 Jul 2025] SDGs - United Nations. Available at: <a href="https://sdgs.un.org/goals/goal2" target="_blank">https://sdgs.un.org/goals/goal2</a>.</li>
+
+        <li>W3Schools (2019). HTML CSS. [Last accessed: 5 Jul 2025] W3Schools.com. Available at: <a href="https://www.w3schools.com/html/html_css.asp" target="_blank">https://www.w3schools.com/html/html_css.asp</a>.</li>
+
+        <li>IIT Web Development Course Materials (2025). Lecture Notes: Responsive Web Design.</li>
+
+        <li>W3Schools (2019). HTML Forms. [Last accessed: 5 Jul 2025] W3Schools.com. Available at: <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">https://www.w3schools.com/html/html_forms.asp</a>.</li>
+
+        <li>www.w3schools.com (n.d.). How To Display an Element on Hover. [Last accessed: 5 Jul 2025] Available at: <a href="https://www.w3schools.com/howto/howto_css_display_element_hover.asp" target="_blank">https://www.w3schools.com/howto/howto_css_display_element_hover.asp</a>.</li>
+
+        <li>World Food Program USA (2023). Is There a Global Food Shortage? [Last accessed: 5 Jul 2025] World Food Program USA. Available at: <a href="https://www.wfpusa.org/articles/is-there-global-food-shortage-whats-causing-hunger-famine-rising-food-costs-around-world/" target="_blank">https://www.wfpusa.org/articles/is-there-global-food-shortage-whats-causing-hunger-famine-rising-food-costs-around-world/</a>.</li>
+
+        <li>World Food Program USA (2023). The Effects of Child Nutrition on Academic Performance. [Last accessed: 5 Jul 2025] World Food Program USA. Available at: <a href="https://www.wfpusa.org/articles/effects-child-nutrition-academic-performance-how-school-meals-can-break-cycle-poverty/" target="_blank">https://www.wfpusa.org/articles/effects-child-nutrition-academic-performance-how-school-meals-can-break-cycle-poverty/</a>.</li>
+
+        <li>www.wvi.org (n.d.). Five ways starvation impacts children. [Last accessed: 5 Jul 2025] World Vision. Available at: <a href="https://www.wvi.org/stories/emergencies/five-ways-starvation-impacts-children-you-may-not-have-heard" target="_blank">https://www.wvi.org/stories/emergencies/five-ways-starvation-impacts-children-you-may-not-have-heard</a>.</li>
+
+        <li>MDN Web Docs (2025). CSS Grid Layout. [Last accessed: 5 Jul 2025] Mozilla Developer Network. Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout</a>.</li>
+      </ul>
+    </section>
+
   </main>
 
   <!-- Footer -->
