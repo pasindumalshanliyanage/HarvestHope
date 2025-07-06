@@ -1,24 +1,114 @@
 /* ===== Content ST1 Page Specific Styles ===== */
 
-.page-container h1 {
-    font-size: 2.8rem;
-    text-align: center;
-    margin-bottom: 30px;
-    color: var(--primary);
-}
-
-.page-container p {
-    font-size: 1.1rem;
-    color: #e0e0e0;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.8;
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 .page-container {
-    background: rgba(34, 34, 34, 0.8);
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background: rgba(34, 34, 34, 0.85);
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.page-container h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+/* Centered Internal Nav */
+.internal-nav {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.internal-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* centers the ul */
+  display: flex;
+  justify-content: center; /* centers nav items horizontally */
+  gap: 30px; /* space between nav items */
+  max-width: 800px; /* optional */
+}
+
+.internal-nav li {
+  margin: 0;
+}
+
+.internal-nav a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: 0.3s;
+}
+
+.internal-nav a:hover {
+  border-color: var(--primary);
+  color: #e0e0e0;
+}
+
+/* Section Paragraphs */
+.page-container p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Images */
+.img-content {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border: 3px solid var(--primary);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.img-content:hover {
+  transform: scale(1.03);
+}
+
+/* Go to Top Button BELOW the content */
+.go-top-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.go-top {
+  display: inline-block;
+  background: var(--primary);
+  color: #121212;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.go-top:hover {
+  background: #e9a93f;
+  color: #121212;
+}
+
+/* Section Headings */
+.content-section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.content-section h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
