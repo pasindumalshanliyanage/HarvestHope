@@ -1,11 +1,13 @@
 /* === Main Container === */
 .page-container {
   max-width: 1000px;
-  margin: 120px auto 80px;
-  background: var(--card);
+  margin: 120px auto 80px auto; /* Center horizontally with auto left & right */
   padding: 40px;
+  background: var(--card);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
 /* === Editor Profile Header === */
@@ -126,4 +128,97 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* === Sidebar Styling === */
+aside {
+  position: fixed;
+  top: 120px;            
+  left: 20px;
+  width: 220px;
+  height: calc(100vh - 140px); 
+  background-color: #1e1e1e;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Scrollbar styling for sidebar */
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+/* Sidebar Heading */
+aside h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+/* Top-level list */
+.top-level-ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: #eee;
+}
+
+.top-level-ul > li {
+  margin-top: 12px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.top-level-ul > li > a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.top-level-ul > li > a:hover {
+  color: var(--primary);
+}
+
+/* Nested list without bullets */
+.no-bullets {
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 10px;
+  color: #ccc;
+}
+
+.no-bullets li {
+  margin-bottom: 6px;
+}
+
+.no-bullets a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.no-bullets a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  aside {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .page-container {
+    margin: 120px 20px 80px 20px; 
+  }
 }
