@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pageeditor St4</title>
     <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="pageEditor_validator.css">
 </head>
 <body>
     <div id="header" class="header">
@@ -33,10 +34,159 @@
         </nav>
     </div>
 
-    <main class="page-container">
-        <h1>Pageeditor St4</h1>
-        <p>Content for Pageeditor St4 page goes here...</p>
-    </main>
+
+    <section class="stud">
+        <h2>Suhas Perera, Student 04 </h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <section>
+                <h2 id="user-profile">User Profile</h2>
+                    <h3>Technical Description</h3>
+                        <p>The User Profile page is structured using semantic HTML to enhance clarity and maintainability. Key sections such as "header", "main", and "footer" divide the page into logical content areas. The profile information is wrapped within "section" and "article" elements to present content like personal details, biography, and profile image in a meaningful way.
+                        <br>
+                        For layout and alignment, CSS Flexbox is used. Properties like "display: flex", "justify-content: center", and "gap" help position content neatly and responsively. Styling is applied using consistent fonts, spacing, and color variables to achieve visual consistency across the site.</p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>Accessibility was carefully considered during development. All images have descriptive "alt" text to ensure they are understandable to users with screen readers. Semantic HTML helped create a logical reading order, and color choices were made to meet contrast guidelines. ARIA roles were used sparingly, only where needed to clarify certain sections. The page was also tested using keyboard navigation to ensure that all links and interactive elements could be accessed without a mouse.</p>
+                    
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST4.html">User profile - validation page</a></p> 
+
+                    <h3>Link to the page</h3>
+                        <p><a href="profile.html">User Profile</a></p>
+            </section>
+
+            <section>
+                <h2 id="sitemap">Sitemap </h2>
+                    <h3>Technical Description</h3>
+                        <p>The Sitemap page was designed to present all internal links in a way that is both visually clear and structurally organized. Using a "nav" element helps clarify the purpose of the content, while the actual list of links is built with "ul" and "li" tags. This structure reflects the hierarchy of the site and allows both users and screen readers to navigate the layout efficiently. Each link is an "a" tag that leads to a corresponding page, styled to highlight on hover for a more interactive experience.
+                        <br>
+                        Styling was handled using CSS Grid, which allowed the links to be displayed in multiple columns. This layout makes the sitemap easier to scan and less cluttered. The grid also adapts on smaller screens thanks to media queries, which help the content stack vertically when space is limited.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>To enhance accessibility, the "nav" region was labeled using an "aria-label" so that assistive technologies could identify it easily. All links use descriptive text so users know exactly where each one leads. The design also maintains keyboard accessibility, and the layout has been tested to ensure that it works with screen readers and other assistive tools.</p>
+
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST4.html">Sitemap -  validation page</a> 
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="sitemap.html">Sitemap</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Content Page was built with a focus on readability and clarity. The core information is placed within an "article" element, which helps define the content area semantically. Additional information, such as author details or related links, is placed in an "aside" element to distinguish it from the main content. Headings are structured from "h1" through "h4", depending on the depth of the content, which helps maintain hierarchy and makes the page easier to scan.
+                        <br>
+                        The CSS styling supports this clean structure by using appropriate font sizes and line spacing, which improve readability. The maximum width of the content is limited to prevent long line lengths that could strain the eyes. </p> 
+
+                    <h3>Accessibility</h3>
+                        <p>To support accessible design, every image includes a proper "alt" attribute, and all text maintains a high contrast ratio against the background. The heading structure was planned carefully so that users of screen readers can navigate the content logically. The page was also reviewed for keyboard navigation, and all interactive elements can be reached and activated without using a mouse.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html">Content Page - validation page</a>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content.html">Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>Throughout the development of the project, I faced several challenges that required both technical problem-solving and creative thinking. One significant challenge was achieving a fully responsive layout. While the initial designs worked well on desktop, they didn’t translate cleanly to mobile. To solve this, I relied on a combination of CSS Flexbox and Grid, along with carefully applied media queries to ensure the layout adjusted smoothly across different screen sizes.
+                    <br>
+                    Another challenge was building accessibility into every part of the site. It’s one thing to have a working page, but ensuring it’s usable by people with disabilities is something else entirely. I had to focus on keyboard navigation, screen reader compatibility, and color contrast compliance. These checks became part of my workflow, helping me understand that accessibility isn’t just a checklist, but a mindset.
+                    <br><br>
+                    There were also technical hurdles, like inconsistencies between browsers, issues with spacing and alignment, and occasional problems with validation when testing forms. These were resolved through continuous testing and referencing trusted resources.
+                    <br>
+                    <ul class="have-bullets">
+                      <li>Planning the HTML structure semantically from the beginning saves time and effort later.</li>
+                      <li>Accessibility should be integrated from the start — not added on as an afterthought.</li>
+                      <li>Responsive design is more than resizing; it requires intentional layout decisions.</li>
+                    </ul>
+
+                    </p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>All the pages I created were developed in line with the Janet regulations for web publication. I made sure that the technical and ethical requirements were met throughout the process, using reliable standards and tools to confirm compliance.
+                    <br>
+
+                    <ul class="have-bullets">
+                      <li>Valid HTML and CSS: All code has been validated through the W3C validation tools, confirming that the structure and styling meet official web standards.</li>
+                      <li>Semantic HTML: Tags such as "nav", "main", "section", and "article" were used to give the content clear meaning, which benefits both users and search engines.</li>
+                      <li>Accessibility (WCAG 2.1 Level AA): The design includes alt text for all images, clear heading structures, sufficient color contrast, and full keyboard navigability.</li>
+                      <li>Responsive Design: Layouts adjust smoothly to mobile, tablet, and desktop screens using media queries and flexible containers.</li>
+                    </ul>
+                    </p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                  
+                      
+                      <li>Duckett, J., 2011. <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons, Inc., Indianapolis.</li>
+        
+                      <li>MDN Web Docs (2025) <i>CSS: Cascading Style Sheets.</i> Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a> (Last accessed: 29 Jun 2025).</li>
+
+                      
+                      <li>W3C (2025) <i>Web Content Accessibility Guidelines (WCAG) 2.1.</i> Available at: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a> (Last accessed: 1 Jul 2025).</li>
+                      
+                      <li>WebAIM (2025) <i>Introduction to Web Accessibility.</i> Available at: <a href="https://webaim.org/intro/">https://webaim.org/intro/</a> (Last accessed: 1 Jul 2025).</li>
+                      
+                      <li>Smashing Magazine (2024) <i>Creating Accessible Websites: Best Practices.</i> Available at: <a href="https://www.smashingmagazine.com/">https://www.smashingmagazine.com/</a> (Last accessed: 3 Jul 2025).</li>
+                  </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <li>Student 1</li>
+                    <ul class="no-bullets"> 
+                        <li><a href="splash.html">Splash page</a></li>
+                        <li><a href="volunteer.html">Volunteer page</a></li>
+                        <li><a href="content_ST1.html">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul class="no-bullets">
+                        <li><a href="home.html">Home page </a></li>
+                        <li><a href="table.html">Table page</a></li>
+                        <li><a href="content_ST2.html">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul class="no-bullets">
+                        <li><a href="feedback.html">Feedback page</a> </li>
+                        <li><a href="team.html">Team page</a></li>
+                        <li><a href="content_ST3.html">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul class="no-bullets">
+                        <li><a href="profile.html">Profile page </a></li>
+                        <li><a href="sitemap.html">Sitemap page</a></li>
+                        <li><a href="content_ST4.html">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
 
 
   <footer class="footer">
