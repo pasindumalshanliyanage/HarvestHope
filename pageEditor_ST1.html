@@ -52,26 +52,80 @@
 
         <div class="task-card">
           <h3>Splash Screen</h3>
-          <p>This entry screen introduces users to the HarvestHope website and our mission. It includes a warm welcome, the project name, and team introduction using elegant visuals.</p>
-          <a href="splash.html" target="_blank" class="view-btn">View Page ↗</a>
+          <p>The splash screen serves as the welcoming entrance to the Hungerless website, designed to make a strong first impression on users. It features the website name and introduces team members through clean, visually engaging design and smooth transitions.</p>
+          <h4>Key HTML Elements</h4>
+          <ul>
+            <li>Used a full viewport container with a background image and overlay to highlight content.</li>
+            <li>Included semantic tags such as <code>&lt;header&gt;</code> and <code>&lt;section&gt;</code> for structure and accessibility.</li>
+          </ul>
+          <h4>Key CSS Techniques</h4>
+          <ul>
+            <li>Applied flexbox for vertical and horizontal centering of content.</li>
+            <li>Used overlay gradients to improve text readability over background images.</li>
+            <li>Implemented fade-in animations to enhance user engagement.</li>
+          </ul>
+          <h4>Design Decisions</h4>
+          <p>The color scheme emphasizes warmth and hope, using the accent orange (#D8931D) to highlight text and interactive elements. The splash screen balances visual impact with simplicity to avoid overwhelming first-time visitors.</p>
+          <a href="splash.html" target="_blank" class="view-btn">Go to Splash Screen ↗</a>
         </div>
 
         <div class="task-card">
           <h3>Volunteer Page</h3>
-          <p>This page showcases a variety of volunteer opportunities, includes a real-time review system, and lets users submit personalized feedback using a form.</p>
-          <a href="volunteer.html" target="_blank" class="view-btn">View Page ↗</a>
+          <p>The Volunteer Page provides information about various volunteer programs and encourages user participation through a real-time user rating and review system, along with a feedback form.</p>
+          <h4>Key HTML Elements</h4>
+          <ul>
+            <li>Structured volunteer opportunities with semantic sections and cards for clarity.</li>
+            <li>Implemented accessible form elements including labels, input fields, and buttons.</li>
+            <li>Added dynamic elements for user ratings and reviews to boost engagement.</li>
+          </ul>
+          <h4>Key CSS Techniques</h4>
+          <ul>
+            <li>Used CSS grid and flexbox for responsive layout adapting to various screen sizes.</li>
+            <li>Styled buttons and form inputs with hover and focus effects for better UX.</li>
+            <li>Applied consistent color theming with the site’s primary accent color for branding.</li>
+          </ul>
+          <h4>Design Decisions</h4>
+          <p>The page is designed to be inviting and easy to navigate, with clear calls to action and consistent branding to motivate users to get involved in volunteer programs.</p>
+          <a href="volunteer.html" target="_blank" class="view-btn">Go to Volunteer Page ↗</a>
         </div>
 
         <div class="task-card">
-          <h3>Content Page (content_ST1)</h3>
-          <p>Details how backyard farming supports local food sustainability. Designed with structured content, styled cards, and relevant imagery to engage users.</p>
-          <a href="content_ST1.html" target="_blank" class="view-btn">View Page ↗</a>
+          <h3>Content Page (Student 01)</h3>
+          <p>This page expands on a selected attraction with additional information, using structured content and visually appealing design to engage users interested in backyard farming and sustainability.</p>
+          <h4>Key HTML Elements</h4>
+          <ul>
+            <li>Used semantic headings and paragraphs to create readable content hierarchy.</li>
+            <li>Incorporated images with descriptive captions to enhance informational value.</li>
+            <li>Employed internal navigation links to improve user experience on longer pages.</li>
+          </ul>
+          <h4>Key CSS Techniques</h4>
+          <ul>
+            <li>Implemented card-based layouts for content sections with shadows and rounded corners.</li>
+            <li>Used responsive typography and spacing for readability across devices.</li>
+            <li>Applied hover effects on links and images to encourage interaction.</li>
+          </ul>
+          <h4>Design Decisions</h4>
+          <p>The page supports the Zero Hunger theme by educating visitors on sustainable backyard farming practices, combining informative text with engaging visuals.</p>
+          <a href="content_ST1.html" target="_blank" class="view-btn">Go to Content Page ↗</a>
         </div>
 
         <div class="task-card">
-          <h3>Page Editor</h3>
-          <p>This current page highlights the contributions made by Student 01. It also provides structured information about completed pages and technical implementation.</p>
-          <a href="pageEditor_ST1.html" class="view-btn">View Page ↗</a>
+          <h3>Student 01 Editor's Page</h3>
+          <p>The editor's page consolidates information about task progress, and direct links to completed tasks. It acts as a central hub for project tracking and accountability.</p>
+          <h4>Key HTML Elements</h4>
+          <ul>
+            <li>Utilized semantic sections and lists to organize editor profiles and task lists.</li>
+            <li>Provided anchor links for quick access to completed pages and validations.</li>
+          </ul>
+          <h4>Key CSS Techniques</h4>
+          <ul>
+            <li>Styled cards and lists to create a clean, professional layout with visual hierarchy.</li>
+            <li>Used consistent color palette and spacing to maintain cohesion with the overall site design.</li>
+            <li>Added hover and active states on links for improved navigation feedback.</li>
+          </ul>
+          <h4>Design Decisions</h4>
+          <p>The page focuses on clarity and usability, making it easy for users and team members to understand progress and access relevant resources quickly.</p>
+          <a href="pageEditor_ST1.html" class="view-btn">Go to Editor's Page ↗</a>
         </div>
 
       </div>
@@ -79,23 +133,49 @@
 
     <section class="section">
       <h2 class="section-title">Technical Description</h2>
-      <p>The goal was to design a consistent user experience with modern HTML5 structure and responsive styling using CSS Flexbox. All pages created by Student 01 use:</p>
+      <p>The primary goal was to build a consistent, user-friendly web experience using modern HTML5 semantics combined with CSS Flexbox for responsive layouts. Key technical aspects include:</p>
       <ul class="styled-list">
-        <li><strong>HTML5 Semantic Tags</strong>: Proper usage of header, section, nav, article, and footer.</li>
-        <li><strong>Card-Based Layouts</strong>: Information presented using visually distinct boxes with shadows and hover effects.</li>
-        <li><strong>Responsive Design</strong>: Media queries and flexible units used to adapt the layout to various devices.</li>
-        <li><strong>Interactive Features</strong>: Review forms, hover transitions, and button styling for enhanced engagement.</li>
+        <li><strong>HTML5 Semantic Elements:</strong> Proper use of elements like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> enhances accessibility and SEO.</li>
+        <li><strong>Card-Based Design:</strong> Information is displayed in distinct card components with shadow effects and hover interactions to improve readability and visual engagement.</li>
+        <li><strong>Responsive Styling:</strong> Media queries allow flexible adjustment of layout and typography across devices from desktop to mobile.</li>
+        <li><strong>Interactive Features:</strong> Review forms with validation, hover transitions, and styled buttons provide dynamic user interaction while maintaining usability.</li>
+      </ul>
+      <p>All pages adhere to best practices for maintainability and scalability, facilitating team collaboration and future updates.</p>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Challenges & Lessons Learned</h2>
+      <ul class="styled-list">
+        <li><strong>Consistency:</strong> Maintaining design uniformity across multiple pages was crucial. Using a global stylesheet helped ensure cohesive styling and easier maintenance.</li>
+        <li><strong>User Engagement:</strong> Creating interactive volunteer and feedback forms required extensive testing to ensure ease of use and accessibility.</li>
+        <li><strong>Responsiveness:</strong> Adapting complex layouts to work seamlessly on different screen sizes was challenging but essential to provide an optimal experience on mobiles and tablets.</li>
+        <li><strong>Content Relevance:</strong> Emphasizing meaningful topics such as sustainable backyard farming strengthened the website’s message aligned with the Zero Hunger goal.</li>
+        <li><strong>Time Management:</strong> Coordinating team roles and adhering to deadlines reinforced project management skills.</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Challenges & Lessons Learned</h2>
+      <h2 class="section-title">Accessibility</h2>
+      <p>Accessibility considerations are integrated throughout the site, including:</p>
       <ul class="styled-list">
-        <li><strong>Consistency:</strong> Maintaining design uniformity across all pages using the global CSS file was critical.</li>
-        <li><strong>User Engagement:</strong> Designing interactive volunteer and feedback sections required testing for ease of use.</li>
-        <li><strong>Responsiveness:</strong> Ensuring visual balance on both large and small screens was refined using Flexbox.</li>
-        <li><strong>Content Relevance:</strong> Focused on meaningful topics such as Backyard Farming to strengthen the Zero Hunger theme.</li>
+        <li>Use of semantic HTML5 elements to improve screen reader navigation.</li>
+        <li>High color contrast ratios between text and backgrounds to aid readability.</li>
+        <li>Keyboard navigability ensured for all interactive elements such as links and forms.</li>
+        <li>Alt attributes for all images providing descriptive text for visually impaired users.</li>
+        <li>Responsive typography that scales appropriately to user device settings.</li>
       </ul>
+      <p>These measures ensure compliance with WCAG 2.1 Level AA standards and promote inclusivity.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Compliance</h2>
+      <p>The website is designed to meet the following standards and guidelines:</p>
+      <ul class="styled-list">
+        <li><strong>W3C HTML5 and CSS3 Validation:</strong> All code passes validation checks to ensure structural correctness and browser compatibility.</li>
+        <li><strong>WCAG 2.1 Level AA Accessibility:</strong> Incorporates features to support users with disabilities and assistive technologies.</li>
+        <li><strong>Cross-Browser Compatibility:</strong> Tested across major browsers (Chrome, Firefox, Edge, Safari) for consistent behavior.</li>
+        <li><strong>Responsive Web Design Principles:</strong> Ensures usability on a range of devices and screen sizes.</li>
+      </ul>
+      <p>Adherence to these standards guarantees a robust, user-friendly, and professional web presence.</p>
     </section>
 
     <section class="section">
@@ -121,7 +201,6 @@
         <li>MDN Web Docs (2025). CSS Grid Layout. [Last accessed: 30 June 2025] Mozilla Developer Network. Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout</a>.</li>
       </ul>
     </section>
-
   </main>
 
   <!-- Footer -->
