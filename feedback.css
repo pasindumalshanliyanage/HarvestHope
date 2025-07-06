@@ -3,7 +3,7 @@
 /* Feedback Form Specific Styles */
 .container {
     width: 90%;
-    max-width: 600px;
+    max-width: 1000px;
     background: rgba(34, 34, 34, 0.9);
     padding: 20px;
     margin: 100px auto 20px;
@@ -80,10 +80,7 @@ select:focus {
   transition: color 0.2s;
 }
 
-.star.hover,
-.star.hover ~ .star {
-  color: gold;
-}
+
 
 .star.selected {
   color: gold;
