@@ -130,13 +130,13 @@ img {
   height: auto;
 }
 
-/* === Sidebar Styling - Fixed Left Side, below header === */
+/* === Sidebar Styling === */
 aside {
   position: fixed;
-  top: 120px;            /* Increased top space to avoid overlapping header */
+  top: 120px;            
   left: 20px;
   width: 220px;
-  height: calc(100vh - 140px); /* Full viewport height minus header + some margin */
+  height: calc(100vh - 140px); 
   background-color: #1e1e1e;
   padding: 20px 15px;
   border-radius: 12px;
@@ -207,7 +207,6 @@ aside h3 {
   text-decoration: underline;
 }
 
-/* === Responsive Sidebar: switch to normal on small screens === */
 @media (max-width: 900px) {
   aside {
     position: relative;
@@ -220,6 +219,6 @@ aside h3 {
   }
 
   .page-container {
-    margin: 120px 20px 80px 20px; /* Remove fixed left margin */
+    margin: 120px 20px 80px 20px; 
   }
 }
