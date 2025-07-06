@@ -1,72 +1,193 @@
-/* global.css */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+/* validation_ST1.css */
 
 body {
-    background-color: #f9f9f9;
-    color: #333;
+    margin-top: 95px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Wrapper */
+.validation-wrapper {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.validation-container {
+    background: rgba(33, 33, 33, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.validation-container h1 {
+    color: #ffc800;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.validation-intro {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1rem;
     line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Header */
-.header {
-    background-color: #006633; /* dark green */
-    padding: 10px 20px;
+/* Sections */
+section {
+    margin-bottom: 4rem;
 }
 
-.header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+section h2 {
+    color: #ffc800;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #cc9c00;
 }
 
-.logo img {
-    height: 50px;
+/* Grid for validation cards */
+.validation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
-/* Navigation Links */
-.nav-links ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+/* Cards */
+.validation-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
-.nav-links ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+.validation-card:hover {
+    transform: translateY(-5px);
 }
 
-.nav-links ul li a:hover,
-.nav-links ul li a.active {
-    background-color: #004d26;
-    color: #fff;
+.validation-card h3 {
+    color: #000000;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
-/* Main Content */
-.page-container {
-    max-width: 960px;
-    margin: 30px auto;
-    padding: 0 20px;
-    background-color: #fff;
+.validation-card p {
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Images */
+.validation-image {
+    border: 1px solid #eee;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
-.page-container h1 {
-    margin-bottom: 20px;
-    color: #006633;
+.validation-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.page-container p {
-    font-size: 1rem;
+.validation-image:hover img {
+    transform: scale(1.02);
 }
 
+/* Back to Top Button */
+.back-to-top-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.back-to-top-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ffc800;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+    background: #00e20b;
+    transform: translateY(-2px);
+}
+
+.back-to-top-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.back-to-top-btn:hover svg {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .validation-wrapper {
+        padding: 0 1rem;
+        margin: 1rem auto;
+    }
+
+    .validation-container {
+        padding: 1.5rem;
+    }
+
+    .validation-container h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .validation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Print Optimization */
+@media print {
+    .validation-wrapper {
+        margin: 0;
+        padding: 0;
+    }
+
+    .validation-container {
+        box-shadow: none;
+    }
+
+    .back-to-top-container {
+        display: none;
+    }
+
+    .validation-card {
+        break-inside: avoid;
+    }
+}
