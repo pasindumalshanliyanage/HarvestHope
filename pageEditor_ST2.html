@@ -72,25 +72,25 @@
                         <h3>Completed Tasks/Pages</h3>
                         <ul>
                             <li>
-                                <strong>Home Page</strong> - 
+                                <strong>&nbsp;&nbsp;Home Page</strong> - 
                                 <a href="home.html" target="_blank" class="external-link">
                                     View Page <span class="icon">↗</span>
                                 </a>
                             </li>
                             <li>
-                                <strong>Content Page (Zero Hunger Roadmap)</strong> - 
+                                <strong>&nbsp;&nbsp;Content Page (Local Food Markets and Distribution)</strong> - 
                                 <a href="content_ST2.html" target="_blank" class="external-link">
                                     View Page <span class="icon">↗</span>
                                 </a>
                             </li>
                             <li>
-                                <strong>Table Page</strong> - 
+                                <strong>&nbsp;&nbsp;Table Page</strong> - 
                                 <a href="table.html" target="_blank" class="external-link">
                                     View Page <span class="icon">↗</span>
                                 </a>
                             </li>
                             <li>
-                                <strong>Website Template & Navigation</strong> - Used throughout the site
+                                <strong>&nbsp;&nbsp;Website Template & Navigation</strong> - Used throughout the site
                             </li>
                         </ul>
                     </div>
@@ -98,7 +98,7 @@
             </section>
             
             <section id="homepage">
-                <h2>Homepage Implementation</h2>
+                <h2>Homepage Implementation Overview</h2>
                 <div class="implementation-details">
                     <h3>Technical Description</h3>
                     <p>The homepage serves as the central hub of the Hungerless website, designed to both engage visitors and provide clear navigation paths to all sections of the site. My implementation focused on creating an impactful first impression while ensuring intuitive usability.</p>
@@ -121,9 +121,11 @@
                     </ul>
                     
                     <h4>Design Decisions</h4>
-                    <p>The color scheme was carefully selected to evoke feelings of warmth and hope, with orange (#D8931D) as the primary accent color. This color is consistently used for interactive elements and important headings to create visual consistency and guide user attention. The dark background with subtle texture provides contrast while giving the site a modern, professional feel.</p>
+                    <p>For the color scheme, I chose a warm and hopeful palette. The main accent color is orange (#D8931D), which is used consistently on buttons, headings, and other interactive elements to draw attention and create visual harmony.</p>
                     
-                    <p>The logo placement and sizing were optimized for immediate brand recognition, with a subtle hover effect to indicate interactivity. Navigation links feature underline effects on hover to reinforce their clickable nature without being visually disruptive.</p>
+                    <p>The dark background, with its subtle texture, gives the site a modern and professional look while allowing the orange accents to stand out. I carefully positioned and sized the logo for immediate brand recognition, adding a gentle hover effect to indicate that it’s clickable.</p>
+                    
+                    <p>Finally, navigation links have a simple underline effect on hover. This reinforces their interactivity without being visually overwhelming, maintaining a clean and polished aesthetic throughout the homepage.</p>
                     
                     <div class="view-page-container">
                         <div class="button-container">
@@ -143,27 +145,27 @@
             </section>
             
             <section id="content-page">
-                <h2>Content Page Implementation (Zero Hunger Roadmap)</h2>
+                <h2>Content Page Implementation (Local Food Markets and Distribution)</h2>
                 <div class="implementation-details">
                     <h3>Technical Description</h3>
-                    <p>The Zero Hunger Roadmap content page presents Hungerless's strategic goals through an organized, visually engaging layout. The page was designed to facilitate both quick scanning and in-depth reading of our organization's approach to addressing food insecurity.</p>
+                    <p>The Local Food Markets and Distribution page was designed to provide an informative and structured overview of local food systems while ensuring easy navigation and a visually appealing reading experience. My implementation aimed to guide users through complex topics in an organized and engaging manner.</p>
                     
                     <h4>Key HTML Elements</h4>
                     <ul>
-                        <li><strong>Semantic Headings</strong> - Used proper heading hierarchy (h1, h2, h3) to structure content logically for both users and screen readers.</li>
-                        <li><strong>Card-based Content</strong> - Implemented a grid of goal cards, each with consistent structure for image, header, and descriptive text.</li>
-                        <li><strong>Internal Navigation</strong> - Created a side navigation menu that allows users to quickly jump to specific goals.</li>
-                        <li><strong>Anchor Links</strong> - Used id attributes and anchor links to enable direct navigation to specific sections of the page.</li>
-                        <li><strong>Back-to-Top Button</strong> - Added a persistent button allowing users to return to the top of the page from any scroll position.</li>
+                        <li><strong>Semantic Headings</strong> - I structured the page using a clear heading hierarchy (h1 for the main title, h2 for section headings) to support readability for both users and screen readers. This approach improves accessibility and SEO.</li>
+                        <li><strong>Internal Navigation Menu</strong> - To enhance user experience, I implemented an internal navigation menu at the top of the content area. This allows visitors to quickly jump to specific sections such as “Benefits of Short Food Distribution Chains” or “Challenges in Local Food Distribution” without excessive scrolling.</li>
+                        <li><strong>Section-Based Content Layout</strong> - The content is divided into thematic sections, each marked with its own id to enable anchor link navigation. Each section combines a heading, a relevant image, and descriptive paragraphs to create a balanced, informative layout.</li>
+                        <li><strong>Images for Contextual Support</strong> - Each section includes an illustrative image, enhancing understanding of the content and making the reading experience more engaging for visual learners.</li>
+                        <li><strong>Back-to-Top Button</strong> - I added a persistent “Back to Top” button at the bottom of the page, enabling users to return to the top effortlessly after reading through long sections.</li>
                     </ul>
                     
                     <h4>Key CSS Techniques</h4>
                     <ul>
-                        <li><strong>CSS Grid & Flexbox</strong> - Combined these layout methods to create a responsive 3×3 grid of goal cards that reorganizes on smaller screens.</li>
-                        <li><strong>Fixed Position Elements</strong> - Used <code>position: fixed</code> for the side navigation and back-to-top button to keep them accessible while scrolling.</li>
-                        <li><strong>Card Styling</strong> - Applied consistent styling to goal cards with subtle shadows and hover effects to enhance visual hierarchy and interaction feedback.</li>
-                        <li><strong>Image Integration</strong> - Optimized SVG images for each goal to ensure crisp rendering at any size while maintaining fast page load times.</li>
-                        <li><strong>Media Queries</strong> - Implemented responsive breakpoints that reorganize content from 3 columns to 2 columns to 1 column as screen width decreases.</li>
+                        <li><strong>Flexbox Layouts</strong> - Flexbox was used to align and distribute elements within containers, such as the header navigation bar and footer sections, ensuring consistency across screen sizes.</li>
+                        <li><strong>Responsive Design with Media Queries</strong> -  Breakpoints were implemented to adjust the layout for mobile, tablet, and desktop views. This ensures images, headings, and paragraphs resize or stack appropriately without compromising readability.</li>
+                        <li><strong>Internal Navigation Styling</strong> - The internal navigation menu is styled distinctly from the main navigation bar, ensuring clear differentiation. Hover effects were added to links to indicate interactivity.</li>
+                        <li><strong>Image Styling and Responsiveness</strong> - All content images are styled to scale appropriately within their sections, maintaining aspect ratios and preventing overflow issues on smaller screens.</li>
+                        <li><strong>Button Styling</strong> - The back-to-top button is styled with a fixed position to remain accessible regardless of scroll position, and features hover feedback to improve usability.</li>
                     </ul>
                     
                     <h4>Interaction Design</h4>
@@ -238,20 +240,29 @@
             <section id="challenges">
                 <h2>Challenges & Lessons Learned</h2>
                 <div class="challenges-section">
-                    <h3>Navigation Consistency</h3>
-                    <p><strong>Challenge:</strong> Ensuring navigation elements remained consistent across all pages while accommodating different content layouts proved difficult.</p>
-                    <p><strong>Solution:</strong> Created a unified navigation component in separate CSS files that could be imported across pages, with specific overrides as needed for special cases.</p>
-                    <p><strong>Lesson:</strong> Planning modular components from the beginning is essential for maintaining consistency across complex sites.</p>
+                    <h3>🟡 Navigation Consistency</h3>
+                    <p><strong> Challenge:</strong> </p>
+                    <p>One of the main challenges I faced was keeping the navigation consistent across all pages while adapting it to different content layouts. Each page had its own unique structure, which sometimes conflicted with the standard navigation design.</p>
+                    <p><strong> Solution:</strong> </p>
+                    <p>To overcome this, I created a unified navigation component and placed its styling in a separate CSS file. This allowed me to import the same navigation styling across pages, ensuring consistency, while still being able to add specific overrides where needed for special cases.</p>
+                    <p><strong>Lesson:</strong> </p>
+                    <p>I realised how important it is to plan modular components from the very start of a project. Doing so makes it much easier to maintain consistency across a large website and saves time in the long run.</p>
                     
-                    <h3>Responsive Goal Cards</h3>
-                    <p><strong>Challenge:</strong> Creating goal cards that maintained visual appeal while reorganizing from a 3×3 grid to different layouts on smaller screens.</p>
-                    <p><strong>Solution:</strong> Implemented a flexible CSS Grid layout with careful breakpoints, combined with minimum and maximum width constraints to ensure cards always displayed optimally.</p>
-                    <p><strong>Lesson:</strong> Testing designs on multiple devices throughout development prevents major rework later in the process.</p>
+                    <h3>🟡 Responsive Goal Cards</h3>
+                    <p><strong> Challenge:</strong></p>
+                    <p>Designing the goal cards to look good on all devices was tricky. I needed them to display in a neat 3×3 grid on desktop screens, but they also had to reorganise cleanly into 2 columns or 1 column on tablets and mobile without losing visual appeal or readability.</p>
+                    <p><strong>Solution:</strong></p>
+                    <p>I implemented a flexible CSS Grid layout with well-defined breakpoints. Adding minimum and maximum width constraints ensured that each card resized gracefully, keeping the design balanced and user-friendly on every screen size.</p>
+                    <p><strong>Lesson:</strong></p>
+                    <P>I learned the value of testing designs on multiple devices throughout development. This approach helped identify layout issues early, preventing major rework at the end.</P>
                     
-                    <h3>Image Optimization</h3>
-                    <p><strong>Challenge:</strong> Balancing image quality with performance, especially for the background imagery that needed to create impact without slowing page load.</p>
-                    <p><strong>Solution:</strong> Used SVGs for iconography and optimized JPG compression for background images. Applied proper sizing and lazy loading techniques to improve performance.</p>
-                    <p><strong>Lesson:</strong> Performance considerations should be part of the design process from the beginning, not an afterthought.</p>
+                    <h3>🟡 Image Optimization</h3>
+                    <p><strong>Challenge:</strong></p>
+                    <p>Another challenge was balancing image quality with page performance. I wanted background and content images to create a strong visual impact, but large file sizes could slow down page loading times, negatively affecting user experience.</p>
+                    <p><strong>Solution:</strong></p>
+                    <p>To solve this, I used SVGs for icons to keep them crisp at any size, and optimised JPG compression for larger background images. I also applied proper sizing techniques and used lazy loading where appropriate to improve page performance.</p>
+                    <p><strong>Lesson:</strong></p>
+                    <p>This experience taught me that performance considerations shouldn’t come as an afterthought. They need to be integrated into the design process from the beginning to achieve both visual impact and fast loading times effectively.</p>
                 </div>
             </section>
             
