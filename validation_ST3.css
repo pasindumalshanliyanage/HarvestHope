@@ -105,36 +105,38 @@ section h2 {
 }
 
 /* Back to Top Button */
-.back-to-top-container {
-    text-align: center;
-    margin-top: 3rem;
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-family: 'Poppins', sans-serif;
 }
 
-.back-to-top-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #ffc800;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #D8931D; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
 }
 
-.back-to-top-btn:hover {
-    background: #00e20b;
-    transform: translateY(-2px);
+
+.top a:hover {
+    background-color: #D8931D;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.back-to-top-btn svg {
-    transition: transform 0.3s ease;
+.top-level-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
 }
 
-.back-to-top-btn:hover svg {
-    transform: translateY(-2px);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
