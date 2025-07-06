@@ -1,5 +1,3 @@
-/* ===== Content ST1 Page Specific Styles ===== */
-
 html {
   scroll-behavior: smooth; /* Enable smooth scrolling */
 }
@@ -31,7 +29,7 @@ html {
   display: flex;
   justify-content: center; /* centers nav items horizontally */
   gap: 30px; /* space between nav items */
-  max-width: 800px; /* optional */
+  max-width: 800px;
 }
 
 .internal-nav li {

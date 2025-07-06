@@ -51,7 +51,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* UPDATED: Force 2 columns exactly for team grid */
 .splash-team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -132,7 +131,6 @@ body {
   }
 }
 
-/* Stack team members in 1 column on very narrow screens */
 @media (max-width: 400px) {
   .splash-team-grid {
     grid-template-columns: 1fr;
