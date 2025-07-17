@@ -1,4 +1,4 @@
-/* === General Body === */
+/*  General Body  */
 body {
   margin-top: 95px;
   padding: 0;
@@ -8,7 +8,7 @@ body {
   color: #fff;
 }
 
-/* === Page Layout Container: Sidebar + Main === */
+/*  Page Layout Container: Sidebar + Main  */
 .page-layout {
   display: flex;
   max-width: 1400px;
@@ -18,7 +18,7 @@ body {
   align-items: flex-start;
 }
 
-/* === Sidebar Styling === */
+/*  Sidebar Styling  */
 aside {
   position: sticky;
   top: 120px;
@@ -71,7 +71,7 @@ aside h3 {
   outline: none;
 }
 
-/* === Main Content Styling === */
+/*  Main Content Styling  */
 .validation-wrapper {
   flex: 1;
   margin: 0;
@@ -194,7 +194,7 @@ section h2 {
   transform: translateY(-2px);
 }
 
-/* === Responsive === */
+/*  Responsive  */
 @media (max-width: 768px) {
   .page-layout {
     flex-direction: column;
@@ -224,7 +224,7 @@ section h2 {
   }
 }
 
-/* === Animation === */
+/*  Animation  */
 @keyframes fadeIn {
   from {
     opacity: 0;
