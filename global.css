@@ -1,6 +1,6 @@
-/* ===== HarvestHope Global CSS ===== */
+/* HarvestHope Global CSS  */
 
-/* === Reset & Base === */
+/*  Reset & Base  */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -24,7 +24,7 @@ body::after {
     z-index: -1;
 }
 
-/* === Variables === */
+/*  Variables  */
 :root {
     --primary: #D8931D; --dark: #121212; --card: #2a2a2a;
     --header: rgba(34,34,34,0.9); --footer: #222;
@@ -32,7 +32,7 @@ body::after {
     --hover-bg: rgba(216,147,29,0.2);
 }
 
-/* === Typography === */
+/*  Typography  */
 h1,h2,h3,h4,h5,h6 {
     font-weight: 600; line-height: 1.3; margin-bottom: 0.5em;
 }
@@ -46,7 +46,7 @@ a {
 }
 a:hover { color: #e0e0e0; }
 
-/* === Header/Nav === */
+/*  Header/Nav  */
 .header {
     position: fixed; top: 0; left: 0; width: 100%;
     z-index: 1000; background: var(--header);
@@ -84,7 +84,7 @@ nav {
     border-color: var(--primary);
 }
 
-/* === Layouts === */
+/*  Layouts  */
 .container, .page-container {
     max-width: 1200px; margin: 0 auto; padding: 0 20px;
 }
@@ -96,7 +96,7 @@ nav {
     gap: 20px;
 }
 
-/* === Section === */
+/*  Section  */
 .section { padding: 60px 0; }
 .section-title {
     color: var(--primary); font-size: 2.2rem;
@@ -108,7 +108,7 @@ nav {
     margin-bottom: 30px; text-align: center;
 }
 
-/* === Card === */
+/*  Card  */
 .card {
     background: var(--card); border-radius: 8px; padding: 25px;
     margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -123,7 +123,7 @@ nav {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-/* === Buttons === */
+/* Buttons  */
 .button, .button-secondary {
     display: inline-block; border-radius: 8px;
     text-decoration: none; font-weight: 600;
@@ -148,7 +148,7 @@ nav {
 .button-small { padding: 8px 15px; font-size: 0.9rem; }
 .button-large { padding: 15px 30px; font-size: 1.1rem; }
 
-/* === Images === */
+/*  Images  */
 .img-fluid { max-width: 100%; height: auto; }
 .img-rounded { border-radius: 8px; }
 .img-circle { border-radius: 50%; }
@@ -157,7 +157,7 @@ nav {
 .img-hover { transition: 0.3s; }
 .img-hover:hover { transform: scale(1.05); }
 
-/* === Forms === */
+/*  Forms */
 .form-group { margin-bottom: 20px; }
 .form-label {
     display: block; margin-bottom: 8px;
@@ -176,7 +176,7 @@ nav {
 textarea.form-control { min-height: 120px; resize: vertical; }
 .form-text { margin-top: 5px; font-size: 0.9rem; color: var(--muted); }
 
-/* === Tables === */
+/*  Tables  */
 .table-container { overflow-x: auto; margin-bottom: 30px; }
 table {
     width: 100%; border-collapse: collapse;
@@ -193,7 +193,7 @@ tbody tr:nth-child(odd) { background: rgba(42,42,42,0.9); }
 tbody tr:nth-child(even) { background: rgba(50,50,50,0.9); }
 tbody tr:hover { background: var(--hover-bg); }
 
-/* === Lists === */
+/*  Lists  */
 ul.styled-list, ol.styled-list {
     padding-left: 20px; margin-bottom: 20px;
 }
@@ -206,7 +206,7 @@ ul.styled-list li::before {
     display: inline-block; width: 1em; margin-left: -1em;
 }
 
-/* === Alerts === */
+/*  Alerts  */
 .alert {
     padding: 15px; margin-bottom: 20px;
     border-left: 5px solid; border-radius: 8px;
@@ -224,7 +224,7 @@ ul.styled-list li::before {
     border-left-color: #b43232;
 }
 
-/* === Footer === */
+/*  Footer  */
 .footer {
     background: var(--footer); color: var(--muted);
     padding: 40px 20px 20px; text-align: center;
@@ -246,7 +246,7 @@ ul.styled-list li::before {
     padding-top: 20px; font-size: 0.9em;
 }
 
-/* === Utility === */
+/*  Utility  */
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
@@ -284,7 +284,7 @@ ul.styled-list li::before {
 .shadow { box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 .shadow-lg { box-shadow: 0 8px 25px rgba(0,0,0,0.5); }
 
-/* === Accessibility === */
+/*  Accessibility  */
 .sr-only {
     position: absolute; width: 1px; height: 1px;
     overflow: hidden; clip: rect(0,0,0,0);
@@ -297,7 +297,7 @@ ul.styled-list li::before {
 }
 .skip-to-content:focus { top: 0; }
 
-/* === Responsive === */
+/*  Responsive  */
 @media (max-width: 992px) {
     .section { padding: 50px 0; }
     .section-title { font-size: 2rem; }
@@ -318,7 +318,7 @@ ul.styled-list li::before {
     .button { padding: 10px 20px; font-size: 0.9rem; }
 }
 
-/* === Legacy Cleanup === */
+/*  Legacy Cleanup  */
 .logo-name, .logo-text, .user-icon { display: none; }
 
 
@@ -386,7 +386,7 @@ ul.styled-list li::before {
   color: #ffc60a;
 }
 
-/* ===== Specific styling for Welcome title only ===== */
+/*  Specific styling for Welcome title only  */
 .welcome-heading {
   font-size: 5rem;               /* Larger font size */
   color: #ffffff;                /* Bright white for emphasis */
