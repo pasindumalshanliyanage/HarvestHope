@@ -76,3 +76,8 @@
 .team-member:hover .task {
     display: block;
 }
+
+/* .team-member:focus {
+    outline: 2px solid #D8931D;
+    transform: scale(1.05); 
+} */
