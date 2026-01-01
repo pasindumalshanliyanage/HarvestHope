@@ -24,7 +24,7 @@
     background-color: rgba(42, 42, 42, 0.9);
     padding: 25px 25px 25px 20px; /* Adjusted padding */
     border-radius: 0 8px 8px 0; /* No left border radius */
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3)
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
     margin-left: 0; /* Remove margin */
     left: 0; /* Position flush against left edge */
     border-left: none; /* No left border */
